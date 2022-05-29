@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(72, 76, 158, 0.685), rgba(160, 216, 195, 0.7)),url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{ 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-family: 'Monoton', cursive;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 14px 32px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    color: orange;
+    font-size: 15px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:rgba(108, 214, 73, 0.685);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+   
+}
+
+.info{
+    width: 90%;
+    color: darkorange;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+.info h1{
+    font-size: 62px;
+}
+
+.info p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: orange;
+}
+
+.logo-img{
+     margin: 0px;
+     padding: 0px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: darkorange;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid blue;
+    background: blue;
+    transition: 1s;
+
+}
+.demobox {
+    background-color: #cfc ;
+    padding: 10px ;
+    border: 1px solid green ;
+  }
