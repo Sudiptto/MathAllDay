@@ -1,2 +1,2 @@
 # DeltaMath-Answers
-Website for the 
+Website for the delta math answers extension!
