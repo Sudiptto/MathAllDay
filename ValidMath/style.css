@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgb(0, 0, 0)),url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{ 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-family: 'Monoton', cursive;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 14px 32px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:rgba(255, 255, 255, 0.685);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+   
+}
+
+.info{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
+.info h1{
+    font-size: 62px;
+}
+
+.info p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.logo-img{
+     margin: 0px;
+     padding: 0px;
+     border-radius: 25px;
+     opacity: 0.75;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    font-family: 'Allura', cursive;
+}
+
+.hero-btn:hover{
+    border: 1px solid blue;
+    background: blue;
+    transition: 1s;
+
+}
+.demobox {
+    background-color: rgb(253, 253, 253) ;
+    padding: 10px ;
+    border: 1px solid rgb(255, 255, 255) ;
+  }
+
+form{
+    text-align: center;
+    margin-top: 70px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    
+    width: 700px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: rgb(25, 135, 21);
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.animation{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.day_1{
+    
+    color: rgb(255, 255, 255);
+    width: 20%;
+    float: left;
+    border-bottom-style: dotted;
+}
+
+.list_style{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.borderr{
+    border-top: 8px solid #bbb;
+  border-radius: 5px;
+} 
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.imgg{
+    border-radius: 25px;
+}
+
+.paragraph{
+    color: rgb(255, 255, 255);
+
+}
+
+.liist{
+    color: rgb(255, 255, 255);
+}
+
+.question {
+    text-align: center;
+}
+
+.headd{
+    color: white;
+    font-size: 18;
+}
+
+.submit_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    font-family: 'Allura', cursive;
+} 
+
+.submit_btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: blue;
+    transition: 1s;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+  .imggg {
+      max-width: 15%;
+  }
