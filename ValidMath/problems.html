@@ -27,7 +27,7 @@
             </div>
         </nav> 
         <h1 style="border: 2px solid white; padding: 10px; background-color: rgb(0, 0, 0); text-align: center;" class = "animation"> Do Problems! </h1>
-        <p style="color: white">Note: Refresh if you get a question wrong, this bug will be fixed in the future! Read About me for more details</p>
+        
         <div class="dropdown">
             <button class="dropbtn">Basic Arithmetic (Hover for more) </button>
             <div class="dropdown-content">
@@ -36,6 +36,7 @@
               <a href="#" ></a>
               <a href="#"></a>
               -->
+              
             </div>
           </div>
 
@@ -44,7 +45,7 @@
         <h3 style="color: rgb(255, 255, 255)" id="questions"></h3>
         <input id="userinput">  <br>
 
-        <button onclick="start()" class="submit_btn">Next!</button>
+        <button onclick="start()" class="submit_btn" id="disabled">Start!</button>
     
         <button onclick="answer()" class="submit_btn"> Submit! </button>
 
@@ -57,7 +58,7 @@
         <h3 style="color: rgb(255, 255, 255)" id="questions1"></h3>
         <input id="userinput1">  <br>
 
-        <button onclick="start2()" class="submit_btn">Next!</button>
+        <button onclick="start2()" class="submit_btn" id="disabled2">Start!</button>
     
         <button onclick="answer2()" class="submit_btn"> Submit! </button>
 
@@ -71,7 +72,7 @@
         <h3 style="color: rgb(255, 255, 255)" id="questions2"></h3>
         <input id="userinput2">  <br>
 
-        <button onclick="start3()" class="submit_btn">Next!</button>
+        <button onclick="start3()" class="submit_btn" id="disabled3">Start!</button>
     
         <button onclick="answer3()" class="submit_btn"> Submit! </button>
 
@@ -81,11 +82,11 @@
         <!---Division -->
         <div class="question">
             <h1 style="color: rgb(255, 255, 255)">Solve Infinite Division Problems! (Round to tenth)</h1> <br>
-            <h2 style="color: white">Skip division by 0 questions</h2>
+            
         <h3 style="color: rgb(255, 255, 255)" id="questions3"></h3>
         <input id="userinput3">  <br>
 
-        <button onclick="start4()" class="submit_btn">Next!</button>
+        <button onclick="start4()" class="submit_btn" id="disabled4">Start!</button>
     
         <button onclick="answer4()" class="submit_btn"> Submit! </button>
             <!-- Algebra section below!-->
@@ -99,9 +100,23 @@
             <h3 style="color: rgb(255, 255, 255)" id="questions4"></h3>
             <input id="userinput4">  <br>
     
-            <button onclick="start5()" class="submit_btn">Next!</button>
+            <button onclick="start5()" class="submit_btn" id="disabled5">Start!</button>
         
             <button onclick="answer5()" class="submit_btn"> Submit! </button>
+
+            <!-- More Algebra -->
+            <!--Notes this is the set up-->
+            <hr style="height:18px;border-width:2;color:silver;background-color: silver">
+            <div id="intro_algebra1"> <!--Change up the divs, nptes fpr later-->
+            <div class="question">
+                <h1 style="color: rgb(255, 255, 255)">Solve More Advanced Algebra1 (Round to nearest tenth)</h1> <br>
+                <h2 style="color: white">Solve for x</h2>
+            <h3 style="color: rgb(255, 255, 255)" id="questions5"></h3>
+            <input id="userinput5">  <br>
+    
+            <button onclick="start6()" class="submit_btn" id="disabled6">Start!</button>
+        
+            <button onclick="answer6()" class="submit_btn"> Submit! </button>
         
         </div>
         
