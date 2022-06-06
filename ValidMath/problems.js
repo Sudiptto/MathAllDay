@@ -153,8 +153,6 @@ function answer4() {
     }
 }
 
-// RANDOM NUMBERS!
-
 
 // Algebra Start:
 
@@ -178,7 +176,7 @@ function answer5() {
         //let user_value = parseInt(y);
         let user_value = parseFloat(y);
         if(user_value == algebra_val1) {
-            alert("Correct, press next");
+            alert("Correct");
             
             algebra_val1 = 0;
             start5();
@@ -221,7 +219,7 @@ function answer6() {
         //let user_value = parseInt(y);
         let user_value = parseFloat(y);
         if(user_value == algebra_val2) {
-            alert("Correct, press next");
+            alert("Correct");
             
             algebra_val2 = 0;
             start6();
@@ -236,8 +234,94 @@ function answer6() {
     }
 }
 
+// Exponents! 
+let algebra_val3 = 0;
+function square_exponent(x) {
+    // Round to first decimal place
+    value = x ** 0.5;
+    return value.toFixed(1);
+}
 
+ // The solution! 
+function start7() {
+    // c == coefficient 
+    const c = Math.floor(Math.random() * 10) + 1;
+    const constantt = Math.floor(Math.random() * 10000) + 1;
+    
+    const solution5_part1 = divide(constantt, c);
+    const solution5 = square_exponent(solution5_part1); // round to nearest tenth place 
+    document.getElementById("questions6").innerHTML = c + "x^2 = " + constantt; 
+    document.querySelector('#disabled7').disabled = true;
+    algebra_val3 += solution5;
+}
+function answer7() {
+    //let userinput = document.querySelector("#userinput");  // always had 
+    //let message = document.querySelector("#message");
+    let y = String(userinput6.value);
+    
+    // Check if the string is valid or not
+    if (isNum(y)) {
+        //let user_value = parseInt(y);
+        let user_value = parseFloat(y);
+        if(user_value == algebra_val3) {
+            alert("Correct");
+            
+            algebra_val3 = 0;
+            start7();
+        } else { 
+            alert("Incorrect, try again");
+            
+        
+        }
+    } 
+    else {
+    alert("Not valid please type a proper number");
+    
+    }
+}
 
+// Advanced exponent Problems! 
+let algebra_val4 = 0;
+function start8() {
+    // c == coefficient 
+    const c = Math.floor(Math.random() * 20) + 5;
+    const constantt = Math.floor(Math.random() * 100) + 1;
+    const c1 = Math.floor(Math.random() * 5) + 1;
+    const constantt1 = Math.floor(Math.random() * 10000) + 100;
+
+    const c2 = c - c1; // subtract the two squared values 
+    const final_constant = constantt1 - constantt;
+    const solution6_part1 = divide(final_constant, c2);
+    const solution6 = square_exponent(solution6_part1); // round to nearest tenth place 
+    document.getElementById("questions7").innerHTML = c + "x^2 +" + constantt + " = " + c1 + "x^2 +" + constantt1 ; 
+    document.querySelector('#disabled7').disabled = true;
+    algebra_val4 += solution6;
+}
+function answer8() {
+    //let userinput = document.querySelector("#userinput");  // always had 
+    //let message = document.querySelector("#message");
+    let y = String(userinput7.value);
+    
+    // Check if the string is valid or not
+    if (isNum(y)) {
+        //let user_value = parseInt(y);
+        let user_value = parseFloat(y);
+        if(user_value == algebra_val4) {
+            alert("Correct");
+            
+            algebra_val4 = 0;
+            start8();
+        } else { 
+            alert("Incorrect, try again");
+            
+        
+        }
+    } 
+    else {
+    alert("Not valid please type a proper number");
+    
+    }
+}
 
 
 
