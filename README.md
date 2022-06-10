@@ -1,3 +1,6 @@
 # Math For All
-Website for the delta math answers extension + math problems!
+Creating a chrome extension (website is practice and for fun) and creating infinite problems.
+
+Will add: 
+Calculus and more advanced math topics soon! 
 
