@@ -7,8 +7,8 @@ function isNum(val){
 
 let sol = 0;
 function start() {
-    const first_num = Math.floor(Math.random() * 10);
-    const second_num = Math.floor(Math.random() * 10);
+    const first_num = Math.floor(Math.random() * 1000);
+    const second_num = Math.floor(Math.random() * 1000);
     const solution = first_num + second_num;
     document.getElementById("questions").innerHTML = "Find: " + first_num + " + " + second_num; 
     document.querySelector('#disabled').disabled = true;
@@ -43,8 +43,8 @@ function answer() {
 let multiplcation_val = 0;
 
 function start2() {
-    const first_num1 = Math.floor(Math.random() * 5);
-    const second_num1 = Math.floor(Math.random() * 5);
+    const first_num1 = Math.floor(Math.random() * 5000);
+    const second_num1 = Math.floor(Math.random() * 5000);
     const solution1 = first_num1 * second_num1;
     document.getElementById("questions1").innerHTML = "Find: " + first_num1 + " * " + second_num1; 
     document.querySelector('#disabled2').disabled = true;

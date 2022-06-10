@@ -8,11 +8,20 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgb(0, 0, 0)),url(Images/background.png);
+    
     background-position: center;
     background-size: cover;
     position: relative;
 
 }
+/* Note: the html was created due to the problem in the quiz.html (background image wasn't 100%) ! */
+html { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgb(0, 0, 0)),url(Images/background.png); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 nav{ 
     display: flex;
     padding: 2% 6%;
@@ -304,3 +313,33 @@ form .submit:hover {
       max-width: 15%;
   }
 
+.quiz {
+    color: white;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .imagee {
+      max-width: 20%;
+      vertical-align: middle;
+      float: right;
+      
+  }
