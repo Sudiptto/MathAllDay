@@ -322,9 +322,52 @@ function answer8() {
     
     }
 }
+// Start of Calculus 
 
+// Limits 
 
+let calculus = 0;
+function start9() {
+    // c == coefficient 
+    const c = Math.floor(Math.random() * 5) + 1;
+    const c1 = Math.floor(Math.random() * 25)+ 1; // Second coefficient  (exponent !)
+    const constantt = Math.floor(Math.random() * 425)+ 1; // Constant value  
+    const x1 = Math.floor(Math.random() * 15) + 1; // random x value!  
+    //Create Solution:
+    solutionn = (c1 * (x1 ** 2)) + (c * x1) + constantt;
+    // Test: WORKS!
+    const subscript = "<sub>"+ "x →" + x1 + "</sub>"; // Substring ! 
+    // Display Question 
+    document.getElementById("questions8").innerHTML = "lim " + subscript + "( " + c1 + "x^2 + " + c + "x + " + constantt + ")" ; 
+    document.querySelector('#disabled9').disabled = true;
 
+    calculus += solutionn;
+    
+}
+function answer9() {
+    //let userinput = document.querySelector("#userinput");  // always had 
+    //let message = document.querySelector("#message");
+    let y = String(userinput8.value);
+    
+    // Check if the string is valid or not
+    if (isNum(y)) {
+        //let user_value = parseInt(y);
+        let user_value = parseInt(y);
+        if(user_value == calculus) {
+            alert("Correct");
+            
+            calculus = 0;
+            start9();
+        } else { 
+            alert("Incorrect, try again");
+            
+        }
+    } 
+    else {
+    alert("Not valid please type a proper number");
+    
+    }
+}
 
 
 
