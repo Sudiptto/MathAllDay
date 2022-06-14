@@ -349,3 +349,39 @@ form .submit:hover {
 .imggg1 {
     max-width: 50%;
 }
+.imggg2{
+    max-width: 10%;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+   }
+    .nav-links ul li{
+        display:block;
+   }
+    .nav-links{
+        position:absolute;
+        background:#000000;
+        height:100vh;
+        width:200px;
+        top:0;
+        right: -200px;
+        text-align:left;
+        z-index: 2; 
+    }
+
+    nav .fa{
+    display:block;
+    color:#fff;
+    margin:20px;
+    font-size:22px;
+    cursor:pointer;
+}
+}
+        
+ 
