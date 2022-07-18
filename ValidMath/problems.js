@@ -368,7 +368,91 @@ function answer9() {
     
     }
 }
-
-
+// Derivatives
+let calculus1 = 0;
+function start10() {
+    // c == coefficient 
+    const c = Math.floor(Math.random() * 5) + 1;
+    const c1 = Math.floor(Math.random() * 5)+ 1; // Second coefficient  (exponent !)
+    const constantt = Math.floor(Math.random() * 4)+ 1; // Constant value 
+    const x = Math.floor(Math.random() * 5) + 1; 
+    const x1 = Math.floor(Math.random() * 5) + 1; // random exponent  value! 
+    const x_value = Math.floor(Math.random() * 5) + 1;  // random x value 
+    //Create Solution Using product rule:
+    solutionn = ((c * x) * x_value ** (x - 1)) + ((c1 * x1) * x_value ** (x1 - 1));
+    // Display Question 
+    document.getElementById("questions9").innerHTML = c + "x^" + x + ' + ' + c1 + "x^" + x1 + ' + ' + constantt + "   :solve for x = " + x_value; 
+    document.querySelector('#disabled10').disabled = true;
+    calculus1 += solutionn;
+    
+}
+function answer10() {
+    //let userinput = document.querySelector("#userinput");  // always had 
+    //let message = document.querySelector("#message");
+    let y = String(userinput9.value);
+    
+    // Check if the string is valid or not
+    if (isNum(y)) {
+        //let user_value = parseInt(y);
+        let user_value = parseInt(y);
+        if(user_value == calculus1) {
+            alert("Correct");
+            
+            calculus1 = 0;
+            start10();
+        } else { 
+            alert("Incorrect, try again");
+            
+        }
+    } 
+    else {
+    alert("Not valid please type a proper number");
+    
+    }
+}
+// Derivativees 2 (Finish at phone )
+let calculus2 = 0;
+function start11() {
+    // c == coefficient 
+    const c = Math.floor(Math.random() * 5) + 1;
+    const c1 = Math.floor(Math.random() * 5)+ 1; // Second coefficient  (exponent !)
+    const constantt = Math.floor(Math.random() * 4)+ 1; // Constant value 
+    const constant = Math.floor(Math.random() * 5) + 1;
+    const x = Math.floor(Math.random() * 5) + 1; // random exponent 
+    const x1 = Math.floor(Math.random() * 5) + 1; // random exponent  value! 
+    const x_value = Math.floor(Math.random() * 5) + 1;  // random x value 
+    //Create Solution Using product rule:
+    solutionn = ((c * x) * x_value ** (x - 1)) + ((c1 * x1) * x_value ** (x1 - 1));
+    // Display Question 
+    document.getElementById("questions10").innerHTML = '(' + c + 'x^' + x + ' + ' + constant + ')' + '(' + c1 + 'x^' + x1 + ' + ' + constantt + '):  Solve for x = ' + x_value ; 
+    document.querySelector('#disabled10').disabled = true;
+    calculus2 += solutionn;
+    
+}
+function answer11() {
+    //let userinput = document.querySelector("#userinput");  // always had 
+    //let message = document.querySelector("#message");
+    let y = String(userinput10.value);
+    
+    // Check if the string is valid or not
+    if (isNum(y)) {
+        //let user_value = parseInt(y);
+        let user_value = parseInt(y);
+        if(user_value == calculus2) {
+            alert("Correct");
+            
+            calculus2 = 0;
+            start10();
+        } else { 
+            alert(calculus2);
+            alert("Incorrect, try again");
+            
+        }
+    } 
+    else {
+    alert("Not valid please type a proper number");
+    
+    }
+}
 
 
