@@ -250,7 +250,7 @@ function start7() {
     
     const solution5_part1 = divide(constantt, c);
     const solution5 = square_exponent(solution5_part1); // round to nearest tenth place 
-    document.getElementById("questions6").innerHTML = c + "x^2 = " + constantt; 
+    document.getElementById("questions6").innerHTML = c + "x <sup>2</sup> = " + constantt; 
     document.querySelector('#disabled7').disabled = true;
     algebra_val3 += solution5;
 }
@@ -293,7 +293,7 @@ function start8() {
     const final_constant = constantt1 - constantt;
     const solution6_part1 = divide(final_constant, c2);
     const solution6 = square_exponent(solution6_part1); // round to nearest tenth place 
-    document.getElementById("questions7").innerHTML = c + "x^2 +" + constantt + " = " + c1 + "x^2 +" + constantt1 ; 
+    document.getElementById("questions7").innerHTML = c + "x <sup>2</sup> + " + constantt + " = " + c1 + "x <sup>2</sup> + " + constantt1 ; 
     document.querySelector('#disabled7').disabled = true;
     algebra_val4 += solution6;
 }
@@ -304,7 +304,7 @@ function answer8() {
     
     // Check if the string is valid or not
     if (isNum(y)) {
-        //let user_value = parseInt(y);
+        //let user_value = parseInt(y); 
         let user_value = parseFloat(y);
         if(user_value == algebra_val4) {
             alert("Correct");
@@ -338,7 +338,7 @@ function start9() {
     // Test: WORKS!
     const subscript = "<sub>"+ "x →" + x1 + "</sub>"; // Substring ! 
     // Display Question 
-    document.getElementById("questions8").innerHTML = "lim " + subscript + "( " + c1 + "x^2 + " + c + "x + " + constantt + ")" ; 
+    document.getElementById("questions8").innerHTML = "lim " + subscript + "( " + c1 + "x" + "<sup>2</sup>" + "+" + c + "x + " + constantt + ")" ; 
     document.querySelector('#disabled9').disabled = true;
 
     calculus += solutionn;
@@ -381,9 +381,10 @@ function start10() {
     //Create Solution Using product rule:
     solutionn = ((c * x) * x_value ** (x - 1)) + ((c1 * x1) * x_value ** (x1 - 1));
     // Display Question 
-    document.getElementById("questions9").innerHTML = c + "x^" + x + ' + ' + c1 + "x^" + x1 + ' + ' + constantt + "   :solve for x = " + x_value; 
+    document.getElementById("questions9").innerHTML = c + "x" + "<sup>" + x + "</sup>" +' + ' + c1 + "x" + "<sup>" + x1 + "</sup>" + ' + ' + constantt + "   :solve for x = " + x_value; 
     document.querySelector('#disabled10').disabled = true;
     calculus1 += solutionn;
+    alert(solutionnn);
     
 }
 function answer10() {
@@ -402,7 +403,6 @@ function answer10() {
             start10();
         } else { 
             alert("Incorrect, try again");
-            
         }
     } 
     else {
@@ -415,23 +415,21 @@ let calculus2 = 0;
 function start11() {
     // c == coefficient 
     const c = Math.floor(Math.random() * 5) + 1;
-    const c1 = Math.floor(Math.random() * 5)+ 1; // Second coefficient  (exponent !)
-    const constantt = Math.floor(Math.random() * 4)+ 1; // Constant value 
-    const constant = Math.floor(Math.random() * 5) + 1;
-    const x = Math.floor(Math.random() * 5) + 1; // random exponent 
-    const x1 = Math.floor(Math.random() * 5) + 1; // random exponent  value! 
-    const x_value = Math.floor(Math.random() * 5) + 1;  // random x value 
+    const c1 = Math.floor(Math.random() * 8)+ 1; // Second coefficient  (exponent !)
+    const constantt = Math.floor(Math.random() * 122)+ 1; // Constant value 
+    const constant = Math.floor(Math.random() * 243) + 1;
+    const x = Math.floor(Math.random() * 2) + 1; // random exponent 
+    const x1 = Math.floor(Math.random() * 2) + 1; // random exponent  value! 
+    const x_value = Math.floor(Math.random() * 3) + 1;  // random x value 
     //Create Solution Using product rule:
-    solutionn = ((c * x) * x_value ** (x - 1)) + ((c1 * x1) * x_value ** (x1 - 1));
+    solutionn = ((c * x) * (x_value ** (x - 1))) * (c1 * (x_value ** x1) + constantt) + (((c1 * x1) * (x_value ** (x1 - 1))) * (c * (x_value ** x) + constant));
     // Display Question 
-    document.getElementById("questions10").innerHTML = '(' + c + 'x^' + x + ' + ' + constant + ')' + '(' + c1 + 'x^' + x1 + ' + ' + constantt + '):  Solve for x = ' + x_value ; 
+    document.getElementById("questions10").innerHTML = '(' + c + 'x' + "<sup>" + x + "</sup>" + ' + ' + constant + ')' + '(' + c1 + 'x' + "<sup>" + x1 + "</sup>" + ' + ' + constantt + '):  Solve for x = ' + x_value ; 
     document.querySelector('#disabled10').disabled = true;
     calculus2 += solutionn;
     
 }
 function answer11() {
-    //let userinput = document.querySelector("#userinput");  // always had 
-    //let message = document.querySelector("#message");
     let y = String(userinput10.value);
     
     // Check if the string is valid or not
@@ -442,7 +440,7 @@ function answer11() {
             alert("Correct");
             
             calculus2 = 0;
-            start10();
+            start11();
         } else { 
             alert(calculus2);
             alert("Incorrect, try again");
