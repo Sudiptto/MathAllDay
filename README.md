@@ -1,9 +1,7 @@
 # Math For All
-Creating a chrome extension (website is practice and for fun) and creating infinite problems.
+Reorganized the whole repository
+Work DONE
 
-Will add: 
-Calculus and more advanced math topics soon! (Currently Working on this)
-
-Made the front page more responsive, will slowly make everything better and flow nicer. Currently working on learning Selenium in JavaScript
+Proper Website (With a Backend): https://validmath100.pythonanywhere.com/ 
 
 Website: https://validmath.netlify.app/ 
