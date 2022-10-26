@@ -163,6 +163,7 @@ form{
 
 input {
     height: 45px;
+    border-radius: 25px;
 }
 
 form .submit {
@@ -374,6 +375,18 @@ nav .fa{
         z-index: 2; 
     }
 
+    .contact_input{
+        width: 50%;
+    }
+
+   
+    .info h1{
+        font-size: 40px;
+    }
+
+    .info p{
+        font-size: 10px;
+    }
     nav .fa{
     display:block;
     color:#fff;
