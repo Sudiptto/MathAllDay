@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidMath</title>
+    <link rel="stylesheet" href="/Webpages/css/style.css"> 
+    <link rel="icon" type="image/x-icon" href="/assets/Images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    ">
+    
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+         <a href="index.html"><img class="logo-img" src="../assets/Images/Logo.png" width="120" height="120" ALT="align box" ALIGN=CENTER  margin="0px" padding="0px"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" style="color: white" onclick="hideMenu()" id="navLinks"></i>
+                <ul>
+                    <li><a href="/Webpages/index.html">Home</a></li>
+                    <li><a href="/Webpages/about.html">About</a></li>
+                    <li><a href="/Webpages/blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="problems.html">Problems</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" style="color:white" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="info">
+        <h1> DO <a style="font-family: 'Allura', cursive;">MATH</a></h1>
+        <p>DEMO (VISIT FLASK SUPPORTED SITE)</p>
+        <p><a href="https://validmath100.pythonanywhere.com/" style="color: white;"> SITE WITH BACKEND (LOGIN / SIGNUP REQUIRED)</a></p>
+        <a href="problems.html" class="hero-btn">DO PROBLEMS</a>
+    
+        <p id="response"></p>
+
+    </div>
+    <div class="loader"></div>
+    
+ 
+    </section>
+    <!-- TO make website responsive, for toggle menu!-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right = "0";
+            document.getElementById("response").innerHTML = "Swipe Right (Mobile Users!)";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>
